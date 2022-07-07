@@ -5,19 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Custom CSS Link -->
     <link rel="stylesheet" href="css/teste.css">
+
+    <!-- Custom JS Link -->
+    <script src="js/script.js"></script>
     <title>Document</title>
 </head>
 
-<body>
+<body onload="onload()">
 
+<!-- menu -->
+
+<div class="menu">
     <video autoplay loop muted plays-inline class="back-video">
         <source src="image/ocean.mp4" type="video/mp4">
     </video>
-    
-    <section>  
+
+    <section>
         <h2 id="text">Aquatic Life<br><span>Preserve a vida</span></h2>
-   
+
         <!-- <img src="image/bird1.png" alt="" id="bird1">
         <img src="image/bird2.png" alt="" id="bird2"> -->
         <a href="#" id="btn">Sub Titulo</a>
@@ -31,49 +40,93 @@
     </section>
 
     <div id="mySidenav" class="sidenav">
-        <a href="#" id="about"><p>Home</p></a>
-        <a href="#sobre" id="blog"><p>Sobre</p></a>
-        <a href="#animais" id="projects"><p>Animais</p></a>
-        <a href="#ajude" id="help"><p>Ajude</p></a>
-        <a href="#contato" id="contact"><p>Contato</p></a>
-      </div>
-  
-    <div class="about">
-        <a id="#">Teste Scroll 1</a>
+        <a href="#" id="home">
+            <p>Home</p>
+        </a>
+        <a href="#sobre" id="sobre-nav">
+            <p>Sobre</p>
+        </a>
+        <a href="#animais" id="projects">
+            <p>Animais</p>
+        </a>
+        <a href="#ajude" id="help">
+            <p>Ajude</p>
+        </a>
+        <a href="#contato" id="contact">
+            <p>Contato</p>
+        </a>
     </div>
+</div>
 
+<!-- menu -->
+
+<!-- sobre -->
+
+    <a id="sobre"></a>
     <div class="sobre">
-        <a id="#sobre">Teste Scroll 2</a>
+
+        <div class="slider">
+            <input type="radio" name="toggle" id="btn-1" checked>
+            <input type="radio" name="toggle" id="btn-2">
+            <input type="radio" name="toggle" id="btn-3">
+
+            <div class="slider-controls">
+                <label for="btn-1"></label>
+                <label for="btn-2"></label>
+                <label for="btn-3"></label>
+            </div>
+
+            <ul class="slides">
+                <li class="slide">
+                    <div class="slide-content">
+                        <h2 class="slide-title">Slide #1</h2>
+                        <p class="slide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                            dignissimos commodi eos totam perferendis possimus dolorem, deleniti vitae harum? Enim.</p>
+                        <a href="#" class="slide-link">Learn more</a>
+                    </div>
+                    <p class="slide-image">
+                        <img src="https://placeimg.com/320/240/tech" alt="stuff" width="420" height="340">
+                    </p>
+                </li>
+                <li class="slide">
+                    <div class="slide-content">
+                        <h2 class="slide-title">Slide #2</h2>
+                        <p class="slide-text">Nisi ratione magni ea quis animi incidunt velit voluptate dolorem enim
+                            possimus, nam provident excepturi ipsam nihil molestiae minus delectus!</p>
+                        <a href="#" class="slide-link">Amazing deal</a>
+                    </div>
+                    <p class="slide-image">
+                        <img src="https://placeimg.com/320/240/animals" alt="stuff" width="420" height="340">
+                    </p>
+                </li>
+                <li class="slide">
+                    <div class="slide-content">
+                        <h2 class="slide-title">Slide #3</h2>
+                        <p class="slide-text">Quisquam quod ut quasi, vero obcaecati laudantium asperiores corporis ad
+                            atque. Expedita fugit dicta maxime vel doloribus sequi, facilis dignissimos.</p>
+                        <a href="#" class="slide-link">Get started</a>
+                    </div>
+                    <p class="slide-image">
+                        <img src="https://placeimg.com/320/240/any" alt="stuff" width="420" height="340">
+                    </p>
+                </li>
+            </ul>
+        </div>
     </div>
 
-    <div class="animais">
-        <a id="#animais">Teste Scroll 3</a>
-    </div>
+        <!-- sobre -->
 
-    <div class="ajude">
-        <a id="#ajude">Teste Scroll 4</a>
-    </div>
+        <div class="ajude">
+            <a id="ajude">Teste Scroll 2</a>
+        </div>
 
-    <div class="contato">
-        <a id="#contato">Teste Scroll 5</a>
-    </div>
+        <div class="animais" style="width: 600px; height: 600px">
+            <a id="animais">Teste Scroll 3</a>
+        </div>
 
-    <script>
-        let text = document.getElementById('text');
-        // let bird1 = document.getElementById('bird1');
-        // let bird2 = document.getElementById('bird2');
-        let btn = document.getElementById('btn');
-
-        window.addEventListener('scroll', function () {
-            let value = window.scrollY;
-
-            text.style.top = 35 + value * -0.1 + '%';
-            // bird1.style.top = value * -1.5 + 'px';
-            // bird1.style.left = value * 2 + 'px';
-            // bird2.style.top = value * -1.5 + 'px';
-            // bird2.style.left = value * -5 + 'px';
-        })
-    </script>
+        <div class="contato" style="width: 600px; height: 600px">
+            <a id="contato">Teste Scroll 4</a>
+        </div>
 
 </body>
 
