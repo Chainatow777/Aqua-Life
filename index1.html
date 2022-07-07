@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/teste.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="image/ocean.mp4" type="video/mp4">
+    </video>
+    
+    <section>  
+        <h2 id="text">Aquatic Life<br><span>Preserve a vida</span></h2>
+   
+        <!-- <img src="image/bird1.png" alt="" id="bird1">
+        <img src="image/bird2.png" alt="" id="bird2"> -->
+        <a href="#" id="btn">Sub Titulo</a>
+
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+
+
+    </section>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="#" id="about"><p>Home</p></a>
+        <a href="#sobre" id="blog"><p>Sobre</p></a>
+        <a href="#animais" id="projects"><p>Animais</p></a>
+        <a href="#ajude" id="help"><p>Ajude</p></a>
+        <a href="#contato" id="contact"><p>Contato</p></a>
+      </div>
+  
+    <div class="about">
+        <a id="#">Teste Scroll 1</a>
+    </div>
+
+    <div class="sobre">
+        <a id="#sobre">Teste Scroll 2</a>
+    </div>
+
+    <div class="animais">
+        <a id="#animais">Teste Scroll 3</a>
+    </div>
+
+    <div class="ajude">
+        <a id="#ajude">Teste Scroll 4</a>
+    </div>
+
+    <div class="contato">
+        <a id="#contato">Teste Scroll 5</a>
+    </div>
+
+    <script>
+        let text = document.getElementById('text');
+        // let bird1 = document.getElementById('bird1');
+        // let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+
+            text.style.top = 35 + value * -0.1 + '%';
+            // bird1.style.top = value * -1.5 + 'px';
+            // bird1.style.left = value * 2 + 'px';
+            // bird2.style.top = value * -1.5 + 'px';
+            // bird2.style.left = value * -5 + 'px';
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  #mySidenav a {
+    position: absolute;
+    left: -85px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  #mySidenav a:hover {
+    left: 0;
+  }
+  
+  #about {
+    top: 25%;
+    background-color: #04AA6D;
+  }
+  
+  #blog {
+    top: 31.25%;
+    background-color: #2196F3;
+  }
+
+  #help {
+    top: 37.5%;
+    background-color: crimson;
+  }
+
+  #projects {
+    top: 43.75%;
+    background-color: #f44336;
+  }
+  
+  #contact {
+    top: 50%;
+    background-color: #555
+  }
