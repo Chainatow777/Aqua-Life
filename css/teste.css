@@ -298,173 +298,175 @@ section .wave.wave4 {
 
 /* about */
 
+.ron {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 2em;
+  -webkit-box-shadow: -3px 22px 13px 10px rgba(0, 0, 0, 0.11);
+  box-shadow: -3px 22px 13px 10px rgba(0, 0, 0, 0.11);
+  transition: 1s ease-in-out;
+  border-radius: 30px;
+}
+
+.ron:hover {
+  -webkit-box-shadow: 50px 22px 13px 10px rgba(0, 0, 0, 0.11);
+  box-shadow: 50px 22px 13px 10px rgba(0, 0, 0, 0.11);
+}
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+.content h1 {
+  text-transform: uppercase;
+  color: #140F2D;
+}
+
+.content h2 {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.content p {
+  padding-top: 1em;
+  font-size: 20px;
+}
+
+.content p::first-letter {
+  font-size: 4rem;
+  font-weight: bold;
+  float: left;
+  margin: 6px 3px;
+  color: #140F2D;
+}
+
+.content hr {
+  max-width: 100px;
+  height: 5px;
+  background: #140F2D;
+}
+
+.image {
+  padding-top: 1em;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+img {
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
 .sobre {
-  display: block;
-  box-sizing: border-box;
   height: 500px;
   background-color: #ffffff;
   clip-path: ellipse(66% 100% at 66% 0%);
   width: 100%;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center
-}
-
-.slider {
-  position: relative;
-  width: 1160px;
-  height: 600px;
-  margin: 50px auto;
-
-  background: rgba(105, 170, 231, 0.23);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-
-  overflow: hidden;
-
-}
-
-.slider-controls {
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  width: 200px;
-  text-align: center;
-  transform: translatex(-50%);
-  z-index: 1000;
-
-  list-style: none;
-  text-align: center;
-}
-
-.slider input[type="radio"] {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider-controls label {
-  display: inline-block;
-  border: none;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  cursor: pointer;
-  background-color: #212121;
-  transition: background-color 0.2s linear;
-}
-
-#btn-1:checked~.slider-controls label[for="btn-1"] {
-  background-color: #B5446E;
-}
-
-#btn-2:checked~.slider-controls label[for="btn-2"] {
-  background-color: #B5446E;
-}
-
-#btn-3:checked~.slider-controls label[for="btn-3"] {
-  background-color: #B5446E;
-}
-
-/* SLIDES */
-
-.slides {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  height: 100%;
-}
-
-.slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  width: 100%;
-  height: 100%;
-
-  opacity: 0;
-  transform: translatex(-100%);
-  transition: transform 250ms linear;
-}
-
-.slide-content {
-  width: 400px;
-}
-
-.slide-title {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-
-.slide-text {
-  margin-bottom: 20px;
-}
-
-.slide-link {
-  display: inline-block;
-  padding: 10px 20px;
-  color: #fff;
-  border-radius: 3px;
-  text-decoration: none;
-  background-color: #B5446E;
-}
-
-.slide-image img {
-  max-width: 100%;
-  border-radius: 5px;
-}
-
-/* Slide animations */
-#btn-1:checked~.slides .slide:nth-child(1) {
-  transform: translatex(0);
-  opacity: 1;
-}
-
-#btn-2:checked~.slides .slide:nth-child(2) {
-  transform: translatex(0);
-  opacity: 1;
-}
-
-#btn-3:checked~.slides .slide:nth-child(3) {
-  transform: translatex(0);
-  opacity: 1;
-}
-
-#btn-1:not(:checked)~.slides .slide:nth-child(1) {
-  animation-name: swap-out;
-  animation-duration: 300ms;
-  animation-timing-function: linear;
-}
-
-#btn-2:not(:checked)~.slides .slide:nth-child(2) {
-  animation-name: swap-out;
-  animation-duration: 300ms;
-  animation-timing-function: linear;
-}
-
-#btn-3:not(:checked)~.slides .slide:nth-child(3) {
-  animation-name: swap-out;
-  animation-duration: 300ms;
-  animation-timing-function: linear;
 }
 
 /* about */
 
-#animais {
-  height: 600px;
-  background-color: blue;
+/* animais */
+
+.animais {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #fff;
 }
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* animais */
 
 #ajude {
   height: 600px;
