@@ -2,172 +2,107 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <!-- Custom CSS Link -->
-    <link rel="stylesheet" href="css/teste.css">
+  <!-- Custom CSS Link -->
+  <link rel="stylesheet" href="css/teste.css">
 
-    <!-- Custom JS Link -->
-    <script src="js/script.js"></script>
-    <title>Document</title>
+  <!-- Custom JS Link -->
+  <script src="js/script.js"></script>
+  <title>Document</title>
 </head>
 
 <body onload="onload()">
 
-    <!-- menu -->
+  <!-- menu -->
 
-    <div class="menu">
-        <video autoplay loop muted plays-inline class="back-video">
-            <source src="image/ocean.mp4" type="video/mp4">
-        </video>
+  <div class="menu">
+    <video autoplay loop muted plays-inline class="back-video">
+      <source src="image/ocean.mp4" type="video/mp4">
+    </video>
 
-        <section>
-            <h2 id="text">Aquatic Life<br><span>Preserve a vida</span></h2>
+    <section>
+      <h2 id="text">Aquatic Life<br><span>Preserve a vida</span></h2>
 
-            <!-- <img src="image/bird1.png" alt="" id="bird1">
+      <!-- <img src="image/bird1.png" alt="" id="bird1">
         <img src="image/bird2.png" alt="" id="bird2"> -->
-            <a href="#" id="btn">Sub Titulo</a>
+      <a href="#" id="btn">Sub Titulo</a>
 
 
-            <div class="wave wave1"></div>
-            <div class="wave wave2"></div>
-            <div class="wave wave3"></div>
-            <div class="wave wave4"></div>
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+      <div class="wave wave4"></div>
 
 
-        </section>
+    </section>
 
-        <div id="mySidenav" class="sidenav">
-            <a href="#" id="home">
-                <p>Home</p>
-            </a>
-            <a href="#sobre" id="sobre-nav">
-                <p>Sobre</p>
-            </a>
-    
-            <a href="#animais" id="projects">
-                <p>Animais</p>
-            </a>
+    <div id="mySidenav" class="sidenav">
+      <a href="#" id="home">
+        <p>Home</p>
+      </a>
+      <a href="#sobre" id="sobre-nav">
+        <p>Sobre</p>
+      </a>
 
-            <a href="#ajude" id="help">
-                <p>Ajude</p>
-            </a>
+      <a href="#animais" id="projects">
+        <p>Animais</p>
+      </a>
 
-            <a href="#contato" id="contact">
-                <p>Contato</p>
-            </a>
-        </div>
-    </div>
+      <a href="#ajude" id="help">
+        <p>Ajude</p>
+      </a>
 
-    <!-- menu -->
-
-    <!-- sobre -->
-
-    <a id="sobre"></a>
-    <div class="sobre">
-        <div class="ron">
-        <div class="content">
-            <h1>Aqua life</h1>
-            <hr>
-            <h2><em>Do que trata o ODS 14:</em></h2>
-
-            <p>
-                A conservação dos recursos marinhos é tema deste ODS. Uma preocupação importante é com a redução da
-                poluição, enfrentando, por exemplo, a acidificação dos mares.
-
-                A pesca, de acordo com a meta, deve ser regulada, a fim de restaurar populações de peixes, para que
-                haja um rendimento máximo e sustentável. Neste sentido, devem ser preservados também o acesso ao mar,
-                aos recursos naturais e aos mercados ao pescador artesanal.</p>
-
-        </div>
-        <div class="image">
-            <img src="image/ods.jpg">
-        </div>
-    </div>
-
-    </div>
-
-    <!-- sobre -->
-
-<!-- animais -->
-
-    <a id="animais"></a>
-    <div class="animais">
-        <h2 style="text-align:center">Slideshow Gallery</h2>
-
-<div class="container">
-  <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
-    <img src="image/sobre.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
-    <img src="image/sobre.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
-    <img src="image/sobre.jpg" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">4 / 6</div>
-    <img src="image/sobre.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">5 / 6</div>
-    <img src="image/sobre.jpg" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">6 / 6</div>
-    <img src="image/sobre.jpg" style="width:100%">
-  </div>
-    
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
-
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
-
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-    </div>    
-    <div class="column">
-      <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+      <a href="#contato" id="contact">
+        <p>Contato</p>
+      </a>
     </div>
   </div>
-</div>
+
+  <!-- menu -->
+
+  <!-- sobre -->
+
+  <a id="sobre"></a>
+  <div class="sobre">
+    <div class="ron">
+      <div class="content">
+        <h1>Aqua life</h1>
+        <hr>
+        <h2><em>Do que trata o ODS 14:</em></h2>
+
+        <p>
+          A conservação dos recursos marinhos é tema deste ODS. Uma preocupação importante é com a redução da
+          poluição, enfrentando, por exemplo, a acidificação dos mares.
+
+          A pesca, de acordo com a meta, deve ser regulada, a fim de restaurar populações de peixes, para que
+          haja um rendimento máximo e sustentável. Neste sentido, devem ser preservados também o acesso ao mar,
+          aos recursos naturais e aos mercados ao pescador artesanal.</p>
+
+      </div>
+      <div class="image">
+        <img src="image/ods.jpg">
+      </div>
     </div>
 
-<!-- animais -->
+  </div>
 
-<div class="ajude">
-    <a id="ajude">Teste Scroll 2</a>
-</div>
+  <!-- sobre -->
 
-    <div class="contato" style="width: 600px; height: 600px">
-        <a id="contato">Teste Scroll 4</a>
-    </div>
+  <!-- animais -->
+  <a id="animais">scroll 2</a>
+  <!-- animais -->
+
+  <div class="ajude">
+    <a id="ajude">Teste Scroll 3</a>
+  </div>
+
+  <div class="contato" style="width: 600px; height: 600px">
+    <a id="contato">Teste Scroll 4</a>
+  </div>
 
 </body>
 

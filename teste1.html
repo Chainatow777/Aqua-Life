@@ -5,20 +5,279 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS Link -->
     <link rel="stylesheet" href="css/waves.css">
-    <title>waves</title>
+
+    <!-- Custom JS Link -->
+    <script src="js/script.js"></script>
+
+    <title>TESTE SITE</title>
 </head>
 
-<body>
-    
+<body onload="onload()">
+
+    <!-- navigation -->
+
     <div id="mySidenav" class="sidenav">
-        <a href="#" id="about">Home</a>
-        <a href="#" id="blog">Sobre</a>
-        <a href="#" id="projects">Animais</a>
-        <a href="#" id="help">Ajude</a>
-        <a href="#" id="contact">Contato</a>
-      </div>
-    
+        <a href="#" id="home">
+            <p>Home</p>
+        </a>
+        <a href="#sobre" id="sobre-nav">
+            <p>Sobre</p>
+        </a>
+
+        <a href="#animais" id="projects">
+            <p>Notícias</p>
+        </a>
+
+        <a href="#ajude" id="help">
+            <p>Ajude</p>
+        </a>
+
+        <a href="#contato" id="contact">
+            <p>Contato</p>
+        </a>
+    </div>
+
+    <!-- navigation -->
+
+    <!-- menu -->
+
+    <div class="menu">
+
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="image/ocean.mp4" type="video/mp4">
+        </video>
+
+        <section>
+
+            <h2 id="text">Aqua Life<br><span>Preserve a vida</span></h2>
+            <a href="#" id="btn">Mergulhe</a>
+
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+            <div class="wave wave4"></div>
+
+        </section>
+
+    </div>
+    <!-- menu -->
+
+    <!-- sobre -->
+
+    <a id="sobre"></a>
+    <div class="sobre">
+        <div class="ron">
+            <div class="content">
+                <h1>Aqua life</h1>
+                <hr>
+                <h3><em>Do que trata o ODS 14:</em></h3>
+
+                <p>
+                    A conservação dos recursos marinhos é tema deste ODS. Uma preocupação importante é com a redução da
+                    poluição, enfrentando, por exemplo, a acidificação dos mares.
+
+                    A pesca, de acordo com a meta, deve ser regulada, a fim de restaurar populações de peixes, para que
+                    haja um rendimento máximo e sustentável. Neste sentido, devem ser preservados também o acesso ao
+                    mar,
+                    aos recursos naturais e aos mercados ao pescador artesanal.</p>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam impedit quia ratione, ab perferendis
+                    asperiores accusantium fugit dolorem. Quasi eveniet impedit consectetur nemo nihil excepturi
+                    repellendus ut, explicabo magni sunt!</p>
+
+            </div>
+            <div class="image">
+                <img src="image/ods.jpg">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- sobre -->
+
+    <!-- animais -->
+
+    <a id="animais"></a>
+    <div class="animais">
+        <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+            <path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" style="stroke: none; fill:#ffff;"></path>
+        </svg>
+
+        <section id="blog">
+            <!--blog-heading--------------->
+            <div class="blog-heading">
+                <span>Ultímas</span>
+                <h3>Notícias</h3>
+            </div>
+
+
+            <!--container---------------->
+            <div class="blog-container">
+
+                <!--box-1------------->
+                <div class="blog-box">
+
+                    <!--img---->
+                    <div class="blog-img">
+                        <img alt="blog" src="image/post.png">
+                    </div>
+                    <!--text--->
+                    <div class="blog-text">
+                        <span>25 Julho 2022 / Natureza</span>
+                        <a href="#" class="blog-title">Colocar alguma coisa, talvez? Concerteza!</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis
+                            adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum
+                            perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
+                        <a href="#">Leia Mais</a>
+                    </div>
+
+                </div>
+
+                <!--box-2------------->
+                <div class="blog-box">
+
+                    <!--img---->
+                    <div class="blog-img">
+                        <img alt="blog" src="image/tartaruga.png">
+                    </div>
+                    <!--text--->
+                    <div class="blog-text">
+                        <span>07 Agosto 2022 / Natureza</span>
+                        <a href="#" class="blog-title">Colocar alguma coisa, talvez? Concerteza!</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis
+                            adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum
+                            perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
+                        <a href="#">Leia Mais</a>
+                    </div>
+
+                </div>
+
+                <!--box-3------------->
+                <div class="blog-box">
+
+                    <!--img---->
+                    <div class="blog-img">
+                        <img alt="blog" src="image/ods.jpg">
+                    </div>
+                    <!--text--->
+                    <div class="blog-text">
+                        <span>11 Julho 2022 / Natureza</span>
+                        <a href="#" class="blog-title">Colocar alguma coisa, talvez? Concerteza!</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis
+                            adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum
+                            perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
+                        <a href="#">Leia Mais</a>
+                    </div>
+
+                </div>
+
+                <!--box-4------------->
+                <div class="blog-box">
+
+                    <!--img---->
+                    <div class="blog-img">
+                        <img alt="blog" src="image/tartaruga.png">
+                    </div>
+                    <!--text--->
+                    <div class="blog-text">
+                        <span>09 Junho 2022 / Natureza</span>
+                        <a href="#" class="blog-title">Colocar alguma coisa, talvez? Concerteza!</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis
+                            adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum
+                            perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
+                        <a href="#">Leia Mais</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- animais -->
+
+    <!-- ajude -->
+
+    <a id="ajude"></a>
+    <div class="ajude">
+
+        <div class="container">
+            <div class="contact-box">
+                <div class="lefti"></div>
+                <div class="right">
+                    <h2>Faça sua doação</h2>
+                    <input type="text" class="field" placeholder="Nome">
+                    <input type="text" class="field" placeholder="Email">
+                    <input type="text" class="field" placeholder="Telefone">
+                    <textarea placeholder="Menssagem" class="field"></textarea>
+                    <button class="btn">Enviar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ajude -->
+
+    <!-- contato -->
+
+    <a id="contato"></a>
+    <div class="contato">
+
+        <div class="card">
+            <div class="top">
+                <div class="userDetails">
+                    <div class="profile_img">
+                        <img src="image/logo.png" class="cover">
+                    </div>
+                    <h3>aquatic_life_senac<br><span>Aquatic Life</span></h3>
+                </div>
+                <div>
+                    <img src="image/dot.png" class="dot">
+                </div>
+            </div>
+            <div class="imgBx">
+                <img src="image/tata.png" class="cover">
+            </div>
+            <div class="actionBtns">
+                <div class="left">
+                    <img src="image/heart.png" class="heart" onclick="likeButton()">
+                    <img src="image/comment.png">
+                    <img src="image/share.png">
+                </div>
+                <div class="right">
+                    <img src="image/bookmark.png">
+                </div>
+            </div>
+            <h4 class="likes">1,284 likes</h4>
+            <h4 class="message"><b>aquatic_life_senac:</b> Siga para apoiar nosso projeto :)<span>#natureza</span>
+                <span>#senac</span><span>#vida</span>
+            </h4>
+            <h4 class="comments">Ver todos os 245 comentários</h4>
+            <div class="addComments">
+                <div class="userImg">
+                    <img src="image/logo.png" class="cover">
+                </div>
+                <input type="text" class="text" placeholder="Adicione um Comentário...">
+            </div>
+            <h5 class="postTime">3 horas atrás</h5>
+        </div>
+
+        <div class="redes">
+            <h1>Segue lá</h1>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+
+
+    </div>
+
+    <!-- contato -->
+
 </body>
 
 </html>

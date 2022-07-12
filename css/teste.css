@@ -308,10 +308,10 @@ section .wave.wave4 {
   border-radius: 30px;
 }
 
-.ron:hover {
+/* .ron:hover {
   -webkit-box-shadow: 50px 22px 13px 10px rgba(0, 0, 0, 0.11);
   box-shadow: 50px 22px 13px 10px rgba(0, 0, 0, 0.11);
-}
+} */
 
 .content {
   max-width: 600px;
@@ -361,7 +361,6 @@ img {
 }
 
 .sobre {
-  height: 500px;
   background-color: #ffffff;
   clip-path: ellipse(66% 100% at 66% 0%);
   width: 100%;
@@ -372,98 +371,123 @@ img {
 
 /* animais */
 
-.animais {
+#blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.blog-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.blog-heading span {
+  color: #f33c3c;
+}
+
+.blog-heading h3 {
+  font-size: 2.4rem;
+  color: #2b2b2b;
+  font-weight: 600;
+}
+
+.blog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  flex-wrap: wrap;
+}
+
+.blog-box {
+  width: 350px;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  margin: 20px 20px;
+
+}
+
+.blog-img {
   width: 100%;
-  height: 100vh;
-  box-sizing: border-box;
-  background-color: #fff;
+  height: auto;
 }
 
-img {
-  vertical-align: middle;
+.blog-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
+.blog-text {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
+.blog-text span {
+  color: #f33c3c;
+  font-size: 0.9rem;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
+.blog-text .blog-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #272727;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
+.blog-text p {
+  color: #9b9b9b;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 20px 0px;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.blog-text a {
+  color: #0f0f0f;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+.blog-text a:hover {
+  color: #c74242;
+  transition: all ease 0.3s;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+
+@media(max-width:1250px) {
+
+  .blog-box {
+    width: 300px;
+  }
 }
 
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
+@media(max-width:1100px) {
+  .blog-box {
+    width: 70%;
+  }
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+@media(max-width:550px) {
 
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
+  .blog-box {
+    margin: 20px 10px;
+    width: 100%;
+  }
 
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
+  #blog {
+    padding: 20px;
+  }
 }
 
 /* animais */
@@ -479,17 +503,3 @@ img {
 }
 
 /* about */
-
-.back-video {
-  position: absolute;
-  top: 2em;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  padding-bottom: 4em;
-
-
-  border-radius: 30px;
-}
