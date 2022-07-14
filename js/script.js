@@ -14,16 +14,3 @@ console.log('teu pão de queijo é meu :)');
    home.classList.add('aberto');
    setTimeout(() => { home.classList.remove('aberto');}, 2500);
 }
-
-function likeButton (){
-    let heart = document.querySelector('.heart');
-    let likes = document.querySelector('.likes');
-    if (heart.scroll.match("../image/heart.png")){
-        heart.src = "../image/heart_red.png";
-        likes.innerHTML = "1,285 likes";
-    }
-    else {
-        heart.src = "../image/heart.png"
-        likes.innerHTML = "1,283 likes";
-    }
-}
