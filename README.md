@@ -24,3 +24,4 @@ A ODS 14 - Vida na Água visa garantir a conservação e o uso sustentável dos 
 Sinta-se à vontade para contribuir com este projeto! Se você tiver informações adicionais, recursos interessantes ou ideias para melhorar o site "Aqua Life" e sua conexão com a ODS 14, fique à vontade para abrir problemas ou enviar solicitações de pull. Juntos, podemos fazer a diferença na conservação dos oceanos e na preservação da vida marinha.
 
 Vamos juntos em direção a um futuro mais sustentável para os nossos oceanos e para as gerações futuras!
+![Aqua LIfe](https://github.com/Chainatow777/Aqua-Life/assets/107222555/a0e155bd-086b-4fb8-a6b3-ea884b6c8f13)
